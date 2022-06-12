@@ -21,21 +21,4 @@ export class AuthController {
     // return 'this.authService.login(req.user);'
     return  this.authService.login(req);
   }
-
-  // @Post('/check-login')
-  // async checkLogin(@Request() req) {
-  //     // console.log('req=',req)
-  //     const { Token } = req.body;
-  //     // console.log('Token==',Token)
-  //   // return 'this.authService.login(req.user);'
-  //   return  this.authService.checkLogin(req);
-  // }
-
-  // @Post('/current-admin')
-  // async checkAdmin(@Request() req) {
-  //     console.log('req=',req)
-  //     const { username } = req.body;
-  //     console.log('username==',username)
-  //   return this.authService.checkAdmin(req);
-  // }
 }

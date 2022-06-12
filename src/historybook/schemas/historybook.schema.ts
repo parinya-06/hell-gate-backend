@@ -6,16 +6,13 @@ export type HistorybookDocument = Historybook & Document;
 @Schema()
 export class Historybook {
   @Prop()
-  title: string;
+  username: string;
 
   @Prop()
-  review: string;
+  book: string;
 
   @Prop()
   price: string;
-
-  @Prop()
-  urlimg: string;
 }
 
 export const HistorybookSchema = SchemaFactory.createForClass(Historybook);

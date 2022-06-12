@@ -54,7 +54,7 @@ export class UsersService {
       // return ' res.send(user);'
     } catch (err) {
       console.log(err);
-      return ' res.status(500).send("Server Error!");'
+      return JSON.stringify("Server Error!");
     }
   }
 
@@ -66,13 +66,13 @@ export class UsersService {
       const adminUser = await this.findUser(username);
       // console.log('adminUser.role =', adminUser.role);
       if (adminUser.role !== 'admin') {
-        return 'res.status(403).send(err,\'Admin Access denied\')'
+        return JSON.stringify("Admin Access denied");
       } else {
         return adminUser.role
       }
     } catch (err) {
       console.log(err);
-      return 'res.status(401).send("Admin Access denied");'
+      return JSON.stringify("Admin Access denied");
     }
   }
 

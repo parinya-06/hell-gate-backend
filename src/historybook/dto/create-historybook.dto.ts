@@ -1,8 +1,7 @@
 export class CreateHistorybookDto {
-    readonly title: string;
-    readonly review: string;
+    readonly username: string;
+    readonly book: string;
     readonly price: string;
-    readonly urlimg: string;
   }
   
   
